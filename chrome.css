@@ -21,6 +21,18 @@
     transform: scale(var(--mod-zencustomurlbar-scale-final)) !important;
   }
 
+  :has(#urlbar:focus-within) #zen-tabbox-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: transparent;
+    pointer-events: auto;
+    z-index: 9999;
+  }
+
   /* #urlbar[breakout-extend="true"] #urlbar-background {
     border: solid 3px color-mix(in hsl, hsl(0 0 50), transparent 90%) !important;
     border-radius: 15px !important;
