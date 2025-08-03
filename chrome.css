@@ -1,0 +1,34 @@
+@media (-moz-bool-pref: "mod.zencustomurlbar.useanimation") {
+  :root {
+    --mod-zencustomurlbar-scale-final: var(--mod-zencustomurlbar-scale, 1);
+    --mod-zencustomurlbar-blur-final: var(--mod-zencustomurlbar-blur, 5px);
+    --mod-zencustomurlbar-brightness-final: var(--mod-zencustomurlbar-brightness, 0.7);
+
+    --zen-tabbox-ease: cubic-bezier(
+      var(--zen-tabbox-user-ease, 0.46, -0.45, 0.34, 1.69)
+    );
+  }
+
+  #zen-tabbox-wrapper {
+    transition: filter 0.25s ease, transform 0.25s var(--zen-tabbox-ease) !important;
+    filter: none !important;
+    transform: scale(1) !important;
+  }
+
+  :has(#urlbar:focus-within) #zen-tabbox-wrapper {
+    filter: blur(var(--mod-zencustomurlbar-blur-final))
+      brightness(var(--mod-zencustomurlbar-brightness-final)) !important;
+    transform: scale(var(--mod-zencustomurlbar-scale-final)) !important;
+  }
+
+  /* #urlbar[breakout-extend="true"] #urlbar-background {
+    border: solid 3px color-mix(in hsl, hsl(0 0 50), transparent 90%) !important;
+    border-radius: 15px !important;
+    background-color: color-mix(
+      in hsl,
+      var(--mod-cleanedurlbar-customcolor),
+      transparent var(--mod-cleanedurlbar-customtransparency)
+    ) !important;
+    backdrop-filter: blur(25px) saturate(2) !important;
+  } */
+}
