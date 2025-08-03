@@ -2,7 +2,10 @@
   :root {
     --mod-zencustomurlbar-scale-final: var(--mod-zencustomurlbar-scale, 1);
     --mod-zencustomurlbar-blur-final: var(--mod-zencustomurlbar-blur, 5px);
-    --mod-zencustomurlbar-brightness-final: var(--mod-zencustomurlbar-brightness, 0.7);
+    --mod-zencustomurlbar-brightness-final: var(
+      --mod-zencustomurlbar-brightness,
+      0.7
+    );
 
     --zen-tabbox-ease: cubic-bezier(
       var(--zen-tabbox-user-ease, 0.46, -0.45, 0.34, 1.69)
@@ -33,14 +36,12 @@
     z-index: 9999;
   }
 
-  /* #urlbar[breakout-extend="true"] #urlbar-background {
-    border: solid 3px color-mix(in hsl, hsl(0 0 50), transparent 90%) !important;
-    border-radius: 15px !important;
+  #urlbar[breakout-extend="true"] #urlbar-background {
     background-color: color-mix(
-      in hsl,
-      var(--mod-cleanedurlbar-customcolor),
-      transparent var(--mod-cleanedurlbar-customtransparency)
+      in srgb,
+      var(--zen-dialog-background),
+      transparent 15%
     ) !important;
-    backdrop-filter: blur(25px) saturate(2) !important;
-  } */
+    backdrop-filter: blur(5px) !important;
+  }
 }
