@@ -24,7 +24,7 @@
     transform: scale(var(--mod-zencustomurlbar-scale-final)) !important;
   }
 
-  :has(#urlbar:focus-within) #zen-tabbox-wrapper::before {
+  :has(#urlbar:focus-within) #tabbrowser-tabpanels::before {
     content: "";
     position: absolute;
     top: 0;

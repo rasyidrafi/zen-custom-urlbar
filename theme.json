@@ -10,12 +10,12 @@
   "readme": "https://raw.githubusercontent.com/rasyidrafi/zen-custom-urlbar/refs/heads/main/README.md",
   "preferences": "https://raw.githubusercontent.com/rasyidrafi/zen-custom-urlbar/refs/heads/main/preferences.json",
   "author": "rasyidrafi",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "tags": [
     "Animation",
     "UI"
   ],
   "createdAt": "2025-07-29",
-  "updatedAt": "2025-08-03",
+  "updatedAt": "2025-08-04",
   "fork": ["zen", "firefox"]
 }
