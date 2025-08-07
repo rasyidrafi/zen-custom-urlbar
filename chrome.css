@@ -18,13 +18,15 @@
     transform: scale(1) !important;
   }
 
-  :has(#urlbar:focus-within) #zen-tabbox-wrapper {
+  /* Only apply blur when no popup/dialog is open */
+  :has(#urlbar:focus-within):not(:has(panel[type="arrow"]:not([hidden]))):not(:has([role="dialog"])):not(:has(.panel-arrowcontent)) #zen-tabbox-wrapper {
     filter: blur(var(--mod-zencustomurlbar-blur-final))
       brightness(var(--mod-zencustomurlbar-brightness-final)) !important;
     transform: scale(var(--mod-zencustomurlbar-scale-final)) !important;
   }
 
-  :has(#urlbar:focus-within) #tabbrowser-tabpanels::before {
+  /* Only add overlay when no popup/dialog is open */
+  :has(#urlbar:focus-within):not(:has(panel[type="arrow"]:not([hidden]))):not(:has([role="dialog"])):not(:has(.panel-arrowcontent)) #tabbrowser-tabpanels::before {
     content: "";
     position: absolute;
     top: 0;
