@@ -71,7 +71,7 @@
     #zen-tabbox-wrapper {
       filter: blur(var(--mod-zencustomurlbar-blur-final))
         brightness(var(--mod-zencustomurlbar-brightness-final)) !important;
-      transform: scale(0.98) !important;
+      transform: scale(var(--mod-zencustomurlbar-scale-final)) !important;
     }
   }
 
