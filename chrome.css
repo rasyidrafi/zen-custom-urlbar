@@ -56,16 +56,18 @@
   }
 
   :root:has(#urlbar[breakout-extend="true"]:focus-within) {
-    #zen-tabbox-wrapper::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: transparent;
-      pointer-events: auto;
-      z-index: 9999;
+    #urlbar[open][zen-floating-urlbar="true"] {
+      #zen-tabbox-wrapper::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: transparent;
+        pointer-events: auto;
+        z-index: 9999;
+      }
     }
 
     #zen-tabbox-wrapper {
