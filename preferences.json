@@ -24,12 +24,6 @@
     "defaultValue": "0.7"
   },
   {
-    "property": "mod.zencustomurlbar.blurinput",
-    "label": "Custom Background Blur for Url Input (put 0px to disable blur)",
-    "type": "string",
-    "defaultValue": "5px"
-  },
-  {
     "property": "mod.zencustomurlbar.borderradius",
     "label": "Custom Border Radius",
     "type": "string",
